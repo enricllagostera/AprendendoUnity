@@ -2,4 +2,4 @@ Repositório didático sobre a ferramenta Unity.
 
 ---
 
-![](../../blob/master/Imagens/screenshot-editor.png)
+![Screenshot do editor da Unity.](https://raw.githubusercontent.com/enricllagostera/AprendendoUnity/master/Imagens/screenshot-editor.png)
