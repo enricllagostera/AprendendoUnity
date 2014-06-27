@@ -5,12 +5,10 @@ var matriz : int[,] = new int[4,4];
 function Start () {
 	for (var l = 0; l < 4; l++) {
 		for (var c = 0; c < 4; c++) {
-			matriz[l, c] = 1;
-			print(matriz[l, c]);
+			matriz[l, c] = 0;
+			//print(matriz[l, c]);
 		}
 	}
-	print(VerificarFimDeJogo());
-	print(TemEspacoLivre(0));
 }
 
 function VerificarFimDeJogo () {
