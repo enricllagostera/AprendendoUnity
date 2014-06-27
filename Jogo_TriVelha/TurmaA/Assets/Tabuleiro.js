@@ -12,6 +12,15 @@ function Start () {
 	Debug.Log(VerificarFimDeJogo());
 }
 
+function TemEspacoLivre (coluna:int) {
+	for (var linha = 0; linha < 4; linha++) {
+		if (matriz[linha, coluna] == 0) {
+			return linha;
+		}
+	}
+	return -1;
+}
+
 function VerificarFimDeJogo () {
 	for (var l = 0; l < 4; l++){
 		for (var c = 0; c < 4; c++){
