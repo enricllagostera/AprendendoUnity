@@ -6,7 +6,9 @@ public var velocidadeRotacao : float;
 public var direcao : Vector2;
 
 function Start () {
-	// inicializa um vetor para guardar a direcao do input do jogador
+	// inicializa um vetor para guardar a direcao do input do jogador,
+	// que eh alterada a cada update nos outros scritps de controle
+	// ControlaInimigo e ControlaJogador
 	direcao = new Vector2();
 }
 
@@ -17,10 +19,11 @@ function Update () {
 }
 
 function FixedUpdate () {
-	// soh aplica a forca de aceleracao se 1) houver algum input e 
+	// soh aplica a forca de aceleracao se 
+	// 1) houver algum input E
 	// 2) se a velocidade for menor que a velocidade maxima
 	if(direcao != Vector2.zero && rigidbody2D.velocity.sqrMagnitude < velocidadeMaxima){
 		// comando que aplica uma forca no rigidbody
-		rigidbody2D.AddForce(direcao.normalized * velocidade * Time.fixedDeltaTime);
+		rigidbody2D.AddForce(direcao.normalized * rigidbody2D.mass * velocidade * Time.fixedDeltaTime);
 	}
 }

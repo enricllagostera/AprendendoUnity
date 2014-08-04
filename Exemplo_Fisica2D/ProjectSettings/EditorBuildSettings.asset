@@ -6,6 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 0
-    path: Assets/Naves.unity
+    path: Assets/Naves/Naves.unity
   - enabled: 1
-    path: Assets/Carro.unity
+    path: Assets/Carro/Carro.unity
