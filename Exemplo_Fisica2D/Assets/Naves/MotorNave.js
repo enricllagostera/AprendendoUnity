@@ -21,6 +21,6 @@ function FixedUpdate () {
 	// 2) se a velocidade for menor que a velocidade maxima
 	if(direcao != Vector2.zero && rigidbody2D.velocity.sqrMagnitude < velocidadeMaxima){
 		// comando que aplica uma forca no rigidbody
-		rigidbody2D.AddForce(direcao.normalized * velocidade * Time.fixedDeltaTime, ForceMode2D.Impulse);
+		rigidbody2D.AddForce(direcao.normalized * velocidade * Time.fixedDeltaTime);
 	}
 }
