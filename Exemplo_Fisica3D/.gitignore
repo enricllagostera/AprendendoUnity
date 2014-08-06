@@ -11,3 +11,6 @@
 *.suo
 *.userprefs
 *.pidb
+
+# include meta files
+!*.*.meta
