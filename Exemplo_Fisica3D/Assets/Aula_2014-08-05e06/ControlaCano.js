@@ -9,6 +9,6 @@ function Start () {
 
 function Update () {
 	// capturando input do usuario (-1 a 1)
-	var input : float = Input.GetAxis("Horizontal");
-	junta.motor.targetVelocity = input * velocidade;
+	var input : float = Input.GetAxis("Vertical");
+	junta.motor.targetVelocity = -1 * input * velocidade;
 }
