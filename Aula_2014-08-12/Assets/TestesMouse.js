@@ -10,8 +10,9 @@ function Update () {
 	);
 	
 	Camera.main.transform.forward = 
-		Vector3.Slerp(Camera.main.transform.forward, direcao,
-			Time.deltaTime);
-	
+		Vector3.Slerp(
+		Camera.main.transform.forward, 
+		direcao,
+		Time.deltaTime);
 	print (Input.GetAxis("Mouse X"));
 }

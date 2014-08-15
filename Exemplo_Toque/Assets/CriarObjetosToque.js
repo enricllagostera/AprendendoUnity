@@ -1,9 +1,7 @@
 ﻿#pragma strict
-
 import System.Collections.Generic;
 
 public var prefabObj : Transform;
-
 public var caixas : Dictionary.<int, Transform>;
 
 function Start () {
@@ -23,21 +21,21 @@ function Update () {
 			if (caixas.ContainsKey(toque.fingerId)) {
 				if (toque.phase == TouchPhase.Canceled ||
 					toque.phase == TouchPhase.Ended ) {
-					print ("saiu");
+					//print ("saiu");
 					Destroy(caixas[toque.fingerId].gameObject);
 					caixas.Remove(toque.fingerId);
 				}
 				else {
-					print ("atualizou");
+					//print ("atualizou");
 					caixas[toque.fingerId].position = posicao;
 				}
 			}
 			else if (toque.phase == TouchPhase.Began) {
-				print ("criou");
+				print ("criou ID: " + toque.fingerId);
 				caixas.Add(toque.fingerId, Instantiate (prefabObj, posicao, Quaternion.identity));
 			}
 		}
-		print ("caixas " + caixas.Count);
+		//print ("caixas " + caixas.Count);
 	}
 	
 	
