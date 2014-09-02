@@ -12,4 +12,4 @@ Quaisquer dúvidas ou problemas encontrados, você pode me contatar [por email](
 
 ---
 
-![Screenshot do editor da Unity.](https://raw.githubusercontent.com/enricllagostera/AprendendoUnity/master/Imagens/screenshot-editor.png)
+![Screenshot do editor da Unity.](https://raw.githubusercontent.com/enricllagostera/AprendendoUnity/master/Imagens_Materiais/screenshot-editor.png)
